@@ -13,4 +13,4 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM semplicemente come stringhe
 */
 
-const workers = []
+const workers = [];
