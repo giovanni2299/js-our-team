@@ -51,3 +51,7 @@ const workers = [
         foto: ' barbara-ramos-graphic-designer.jpg'
     }
 ];
+
+console.log(workers);
+
+const viewserEl = document.querySelector('.workers');
