@@ -82,7 +82,7 @@ for(let i = 0; i < workers.length; i++){
     //viewserEl.append('worker-name: ' +workersArray.nome, ' worker-surname: ' +workersArray.cognome, ' worker-role: '+workersArray.ruolo, ' worker-photo: ' +workersArray.foto)
     
     //creo un slingolo elemento oggetto <div class="col-4"></div>
-    const flexElement = document.querySelector('.flex');
+    const flexElement = document.querySelector('.workers_container');
     const divElementWorker = document.createElement('div');
     // divElementWorker.className = 'col-4' 
     flexElement.append(divElementWorker);
