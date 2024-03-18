@@ -1,4 +1,4 @@
-console.log('ciao mamma')
+// console.log('ciao mamma')
 
 
 /*
@@ -61,12 +61,37 @@ const workers = [
 
 // console.log(workers);
 
+const viewserEl = document.querySelector('.workers');
+// const elementDomNome = document.querySelector('.nome');
+// const elementDomCogn = document.querySelector('.cognome');
+// const elementDomRuolo = document.querySelector('.ruolo');
+// const elementDomPhoto = document.querySelector('.photo');
+
+
+
 //stampare in console i singoli elementi 
 for(let i = 0; i < workers.length; i++){
+
     const workersArray = workers[i];
-    console.log(workersArray);
+
+    //stampo in console le singole proprietà dell array
+    console.log(workersArray.nome, workersArray.cognome, workersArray.ruolo, workersArray.foto);
+
+
+    //stampo i valori nell index ma in modo "grezzo"
+    //viewserEl.append('worker-name: ' +workersArray.nome, ' worker-surname: ' +workersArray.cognome, ' worker-role: '+workersArray.ruolo, ' worker-photo: ' +workersArray.foto)
+    
+    //creo un slingolo elemento oggetto <div class="col-4"></div>
+    const flexElement = document.querySelector('.flex');
+    const divElementWorker = document.createElement('div');
+    // divElementWorker.className = 'col-4' 
+    flexElement.append(divElementWorker);
+    divElementWorker.innerHTML = `${workersArray.nome}, ${workersArray.cognome}, ${workersArray.ruolo}, ${workersArray.foto}` 
 }
 
+// for(let key in workers){
+//     console.log(workers[key])
+// }
 
-const viewserEl = document.querySelector('.workers');
+
 // console.log(viewserEl);
